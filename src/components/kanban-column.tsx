@@ -1,8 +1,7 @@
-import React from 'react';
-import { Card, CardBody, CardHeader, Button } from '@heroui/react';
-import { Icon } from '@iconify/react';
-import { TaskCard } from './task-card';
-import type { Column, Task } from '../types/kanban';
+import { Card, CardBody, CardHeader, Button } from "@heroui/react";
+import { Icon } from "@iconify/react";
+import { TaskCard } from "./task-card";
+import type { Column, Task } from "../types/kanban";
 
 interface KanbanColumnProps {
   column: Column;
@@ -15,7 +14,7 @@ export const KanbanColumn = ({
   column,
   onAddTask,
   onEditTask,
-  onDeleteTask
+  onDeleteTask,
 }: KanbanColumnProps) => {
   return (
     <Card className="w-[350px] h-full">
